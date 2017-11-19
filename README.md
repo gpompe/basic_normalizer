@@ -1,43 +1,23 @@
-# text_normalization
+# Basic_normalizer
 
-Python module for text normalization into canonical form.
+Python module for text normalization into canonical form. Based on a JS project.(Need to add reference)
+
+Includes Whitespace, Capitalization, Abbreviations, British/Canadian, common spelling mistakes and Contractions Normalization
+
+TODO: Improve loading and processing performance
 
 ## Installation
-    git clone https://github.com/dchang16/text_normalization/
-    python setup.py install
+    pip install normalizer
 
 ## Example
 ```python
-import normalization
-    
-## Whitespace Normalization
-# Output: "This is not a normal sentence structure. The spaces are incoherant."
-normalization.whitespace("This is not a normal sentence structure .  The spaces are incoherant  .")
-    
-## Capitalization Normalization
-# Output: "This is not capitalized. It should be."
-normalization.capitalize("this is not capitalized. it should be.")
-    
-## Abbreviations Normalization
-# Output: "Doctor where were you on August fifth?"
-normalization.abbreviations("Dr. where were you on aug 5th?")
-    
-## British Normalization
-# Output: "ax apologize"
-normalization.british("axe apologise")
-    
-## Contractions Normalization
-# Output: I will listen to you all
-normalization.contractions("I'll listen to y'all")
-    
-## Spellfix Normalization
-# Output: "This sentence is acceptable."
-normalization.spellfix("This sentance is acceptible.")
-    
+import normalizer
+
 ## Normalize
 # Combines all normalization methods above
 # Output: "This is a normal sentence."
-normalization.normalize("This is a normal sentence.")
+normalizer.loadData()
+normalizer.normalize("This is a normal sentence.")
 ```
 
 ## License

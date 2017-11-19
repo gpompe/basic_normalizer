@@ -1,13 +1,13 @@
 from setuptools import setup
 
-setup(name='normalization',
-      version='0.4',
-      description='Text normalization module for natural language processing',
-      url='http://github.com/dchang16/text_normalization',
-      author='David Chang',
-      author_email='d26chang@gmail.com',
+setup(name='normalizer',
+      version='0.1',
+      description='Very basic text normalization module',
+      url='http://github.com/gpompe/basic_normalizer',
+      author='Gaston Pompe',
+      author_email='gastonpompe@gmail.com',
       license='MIT',
-      packages=['normalization'],
+      packages=['normalizer'],
       zip_safe=False,
       include_package_data=True
       )
